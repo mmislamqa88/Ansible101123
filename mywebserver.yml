@@ -5,6 +5,5 @@
   tasks:
   - name: Installing Apache2 webserver
     apt:
-      name: Apache2
+      name: apache2
       state: present 
-      
