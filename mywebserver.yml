@@ -22,5 +22,5 @@
   - name: I want to start httpd server
     service:
       name: httpd
-      state: present 
+      state: started 
     when: ansible_os_family == "RedHat"
