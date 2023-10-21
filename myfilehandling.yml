@@ -1,8 +1,8 @@
 --- 
 - hosts: 172.31.35.184
   become: yes
-  include_tasks: myfile.yml
   tasks: 
+  - include_tasks: myfile.yml
   - name: Install webserver
     apt:
       name: apache2
