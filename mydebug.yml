@@ -9,3 +9,15 @@
   - name: want to display 
     debug:
       msg: "{{myhostname}}"
+
+  - name: Install git 
+    apt: 
+      name: git
+      state: present 
+    when: myhostname.stderr != "" 
+
+  - name: Install tree 
+    apt: 
+      name: tree 
+      state: present 
+    when: myhostname.stderr == ""
