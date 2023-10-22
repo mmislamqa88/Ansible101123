@@ -11,3 +11,9 @@
     copy:
       src: mystaticfile.txt
       dest: /home/ubuntu/myfile2.txt 
+
+  - name: copying index.j2 template to ansible nodes
+    template:
+      src: mystaticfile.txt
+      dest: /var/www/html/index.html
+      
