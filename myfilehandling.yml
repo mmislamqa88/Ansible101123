@@ -9,5 +9,5 @@
 
   - name: copy file
     copy:
-      src: mystatic.txt
+      src: mystaticfile.txt
       dest: /home/ubuntu/myfile2.txt 
