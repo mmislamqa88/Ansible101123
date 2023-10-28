@@ -13,7 +13,7 @@
 - name: i want to copy host manager context file
   template:
     src: templates/mytomhostcontext.j2
-    dest: sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
 - name: I want to copy tomcat service file into ansible node
   template:
