@@ -16,4 +16,6 @@
     template:
       src: mystaticfile.txt
       dest: /var/www/html/index.html
+
+  
       
