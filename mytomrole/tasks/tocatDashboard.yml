@@ -1,0 +1,17 @@
+--- 
+
+- name: I want to add tomcat users-xml
+  template:
+    src: templates/mytomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: i want to copy context file
+  template: 
+    src: templates/mytomcontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: i want to copy host manager context file
+  template:
+    src: templates/mytomhostcontext.j2
+    dest: sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
