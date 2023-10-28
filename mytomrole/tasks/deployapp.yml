@@ -1,6 +1,6 @@
 --- 
 - name: deploy application
   get_url: 
-    url: https://rik102322.s3.us-east-2.amazonaws.com/mahaLogin-2.0.war
-    dest: /opt/tomcat/webapps/mahaLogin-2.0.war
+    url: https://mys3bucket080723.s3.amazonaws.com/spring-petclinic-3.1.0-SNAPSHOT.jar
+    dest: /opt/tomcat/webapps/spring-petclinic-3.1.0-SNAPSHOT.jar
     force_basic_auth: yes
